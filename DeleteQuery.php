@@ -8,7 +8,7 @@ $db = new Database('localhost', 'db_pbl_kel_1', 'root', '');
 $db->connect();
 
 // Menyimpan ID user yang akan dihapus
-$id = 18;
+$id = 19;
 
 // Menyimpan query SQL untuk menghapus user dari tabel users
 $sql = "DELETE FROM users WHERE user_id = :id";
@@ -27,7 +27,7 @@ if ($rows_affected > 0) {
     echo "User dengan user_id: $id berhasil dihapus.";
 } else {
     // Menampilkan pesan bahwa tidak ada user yang terhapus
-    echo "Tidak ada user yang terhapus.";
+    echo "ERROR Tidak ada user yang terhapus.";
 }
 
 // Menutup koneksi ke database

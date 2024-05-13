@@ -9,7 +9,7 @@ $db->connect();
 
 // Menyimpan data yang akan diperbarui dalam database
 $data = [
-    'id' => 17,
+    'id' => 19,
     'name' => 'Nama Baru aja',
     'email' => 'email_baru1@contoh.com',
     'username' => 'anjay123' ,
